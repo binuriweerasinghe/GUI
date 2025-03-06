@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitEase - Workout Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="workout-page">
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="workout.html" class="active">Workout Plan</a></li>
+            <li><a href="nutrition.html">Nutrition Tracker</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Weekly Workout Plan</h1>
+        <p>Click a day to see exercises</p>
+
+        <div class="week-grid">
+            <div class="day" onclick="showWorkout('monday')">Monday</div>
+            <div class="day" onclick="showWorkout('tuesday')">Tuesday</div>
+            <div class="day" onclick="showWorkout('wednesday')">Wednesday</div>
+            <div class="day" onclick="showWorkout('thursday')">Thursday</div>
+            <div class="day" onclick="showWorkout('friday')">Friday</div>
+            <div class="day" onclick="showWorkout('saturday')">Saturday</div>
+            <div class="day" onclick="showWorkout('sunday')">Sunday</div>
+        </div>
+
+        <div id="workout-details" class="workout-details">
+            <h2 id="day-title"></h2>
+            <img id="day-image" src="" alt="Workout Image">
+            <ul id="exercise-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

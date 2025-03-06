@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body class="nutrition-page">
+    <header>
+        <nav class="nav-container">
+            <ul class="nav-boxes">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="workout.html">Workout Plan</a></li>
+                <li><a href="nutrition.html" class="active">Nutrition Tracker</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="nutrition-container">
+        <h2>Daily Meal Plan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Meal</th>
+                    <th>Food</th>
+                    <th>Calories</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Breakfast</td>
+                    <td>
+                        <select id="breakfast-food">
+                            <option value="250">Oatmeal with Fruits (250 kcal)</option>
+                            <option value="300">Scrambled Eggs with Toast (300 kcal)</option>
+                            <option value="180">Greek Yogurt with Honey (180 kcal)</option>
+                        </select>
+                    </td>
+                    <td id="breakfast-calories">250</td>
+                </tr>
+                <tr>
+                    <td>Lunch</td>
+                    <td>
+                        <select id="lunch-food">
+                            <option value="450">Grilled Chicken Salad (450 kcal)</option>
+                            <option value="500">Brown Rice & Vegetables (500 kcal)</option>
+                            <option value="400">Salmon with Quinoa (400 kcal)</option>
+                        </select>
+                    </td>
+                    <td id="lunch-calories">450</td>
+                </tr>
+                <tr>
+                    <td>Dinner</td>
+                    <td>
+                        <select id="dinner-food">
+                            <option value="350">Grilled Fish & Steamed Veggies (350 kcal)</option>
+                            <option value="420">Lentil Soup & Whole Wheat Bread (420 kcal)</option>
+                            <option value="380">Vegetable Stir Fry (380 kcal)</option>
+                        </select>
+                    </td>
+                    <td id="dinner-calories">350</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="calculate-calories">Calculate Total Calories</button>
+        <p><strong>Total Calories:</strong> <span id="total-calories">1050</span> kcal</p>
+
+        <h2>Weekly Meal Plans</h2>
+        <div class="meal-plans">
+            <button class="day-btn" data-day="monday">Monday</button>
+            <button class="day-btn" data-day="tuesday">Tuesday</button>
+            <button class="day-btn" data-day="wednesday">Wednesday</button>
+            <button class="day-btn" data-day="thursday">Thursday</button>
+            <button class="day-btn" data-day="friday">Friday</button>
+            <button class="day-btn" data-day="saturday">Saturday</button>
+            <button class="day-btn" data-day="sunday">Sunday</button>
+        </div>
+
+        <div id="meal-plan-details" class="meal-plan-box">
+            <h3 id="day-title">Monday Meal Plan</h3>
+            <ul id="meal-list"></ul>
+        </div>
+    </main>
+</body>
+</html>

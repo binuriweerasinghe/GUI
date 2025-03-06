@@ -1,0 +1,359 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.login-page {
+    background: url('images/login-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.signup-page {
+    background: url('images/signup-bg.jpg') no-repeat center center/cover;
+}
+.login-container, .signup-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Home Page Background */
+.home-page {
+    background: url('images/home-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar ul li a:hover, .navbar ul li a.active {
+    background: #ff6b6b;
+}
+
+/* Main Content */
+.container {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/* Workout Section */
+.workout-section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.workout-section h2 {
+    color: #ffdd57;
+}
+
+.workout-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.workout-section li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+/* Progress Section */
+.progress-section {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.progress-section h2 {
+    color: #ff6b6b;
+}
+
+.progress-section img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+
+/* Workout Page Background */
+.workout-page {
+    background: url('images/workout-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Weekly Grid */
+.week-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.day {
+    background: #ff6b6b;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.day:hover {
+    background: #ffdd57;
+}
+
+/* Workout Details */
+.workout-details {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.workout-details img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.workout-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.workout-details li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Navigation box style */
+.nav-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.nav-boxes {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-boxes li {
+    margin: 0 10px;
+}
+
+.nav-boxes a {
+    display: block;
+    background: #ff6b6b;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.nav-boxes a:hover, .nav-boxes .active {
+    background: #ff6b6b;
+}
+
+/* Background for Nutrition Page */
+.nutrition-page {
+    background: url("images/nutrition-bg.jpg") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    color: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    background: #ff6b6b;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.meal-plans {
+    display: flex;  /* Makes all buttons appear in a row */
+    justify-content: center; /* Centers the buttons */
+    gap: 10px; /* Adds spacing between buttons */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allows wrapping if the screen is small */
+}
+
+.day-btn {
+    background: #ff6b6b;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: 120px;  /* Ensures equal width for all boxes */
+    text-align: center;
+}
+
+.day-btn:hover {
+    background: #e04b4b; /* Darker shade on hover */
+}
+
+
+.meal-plan-box {
+    display: none;
+    background: white;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* Profile Page Background */
+.profile-page {
+    background: url("images/profile-bg.jpg") no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Card */
+.profile-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile Image */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #ff6b6b;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ff6b6b;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff6b6b;
+}
+
+.profile-card label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.profile-card input, .profile-card select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
